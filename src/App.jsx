@@ -614,7 +614,7 @@ const SIDE_PROJECTS = [
   {
     id: 'nh-local',
     title: "NH로컬챌린지",
-    url: "https://nh-local-challenge.vercel.app",
+    url: "https://local-challenge.vercel.app",
     role: "팀 프로젝트 기획 & Full Stack 개발",
     tech: ["Next.js", "Supabase", "PWA"],
     desc: "농협은행 AI 아이디어 챌린지 출품작으로, 청년 소상공인을 위한 금융 플랫폼입니다. '내가 자주 가는 식당에 투자한다'는 컨셉으로, 식당 이용 시 적립되는 농협 포인트를 주식처럼 운용할 수 있는 기능을 구현했습니다. 기획 단계부터 참여하여 타겟 페르소나(청년 소상공인)를 정의하고, MAU 증대를 위한 서비스 로직을 설계 및 개발했습니다.",
