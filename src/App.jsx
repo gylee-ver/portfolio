@@ -610,6 +610,24 @@ const SIDE_PROJECTS = [
     tech: ["Next.js", "Admin System", "Complex Logic"],
     desc: "가벼운 아티클부터 심도 있는 콘텐츠까지, '사람들이 많이 볼 만한 사이트'를 모아놓은 이슈 큐레이션 플랫폼입니다. 추후 아티클 생성 자동화까지 개발이 가능합니다. 특히 개발 관점에서 다양한 카테고리와 태그 시스템을 관리하기 위해 복잡한 로직을 설계했습니다. 또한 효율적인 콘텐츠 업로드를 위해 별도의 관리자(Admin) 프로그램을 직접 개발하여 운영 효율성을 극대화한 것이 '신의 한 수'입니다.",
     image: "/pickteum.png"
+  },
+  {
+    id: 'nh-local',
+    title: "NH로컬챌린지",
+    url: "https://nh-local-challenge.vercel.app",
+    role: "팀 프로젝트 기획 & Full Stack 개발",
+    tech: ["Next.js", "Supabase", "PWA"],
+    desc: "농협은행 AI 아이디어 챌린지 출품작으로, 청년 소상공인을 위한 금융 플랫폼입니다. '내가 자주 가는 식당에 투자한다'는 컨셉으로, 식당 이용 시 적립되는 농협 포인트를 주식처럼 운용할 수 있는 기능을 구현했습니다. 기획 단계부터 참여하여 타겟 페르소나(청년 소상공인)를 정의하고, MAU 증대를 위한 서비스 로직을 설계 및 개발했습니다.",
+    image: "/local.png"
+  },
+  {
+    id: 'menturn',
+    title: "AI 시니어 파트너스 플랫폼 - 멘턴",
+    url: "https://menturn.vercel.app",
+    role: "팀 프로젝트 기획 & Front-End 개발",
+    tech: ["React", "AI Integration", "Platform"],
+    desc: "2025 AI 융합 아이디어톤 출품작입니다. 은퇴한 베이비붐 세대와 인력난을 겪는 제조업 현장을 연결하는 AI 매칭 플랫폼입니다. 시니어에게는 은퇴 후의 일자리를, 기업에게는 숙련된 단기 인력을 제공하여 사회적 문제를 해결하고자 했습니다. 프론트엔드 개발을 주도하며 시니어 사용자도 쉽게 이용할 수 있는 직관적인 UI/UX를 구현했습니다.",
+    image: "/menturn.png"
   }
 ];
 
@@ -1271,33 +1289,13 @@ const App = () => {
 
              <h2 className="text-4xl md:text-6xl font-bold mb-4">ZERO TO ONE<span className="text-[#d4ff00]">.</span></h2>
 
-             <p className="text-gray-400 text-lg">무에서 유를 창조하는 실행력, 그것이 저의 본질입니다.</p>
+             <p className="text-gray-400 text-lg">무에서 유를 창조하는 실행력.</p>
 
           </div>
 
           
 
           <div className="grid md:grid-cols-2 gap-8">
-
-            <ZeroOneCard 
-
-                title="JB ORCA 야구단 창단"
-
-                role="FOUNDER"
-
-                desc="야구를 하고 싶다는 단순한 열정으로 시작해, 3명에서 27명의 조직으로 성장시켰습니다. 로고 디자인부터 유니폼 제작, 구단 운영 시스템 구축까지 모든 과정을 주도했습니다."
-
-                items={[
-
-                    "2023년 창단, 현재 27명 규모",
-
-                    "브랜딩 및 굿즈(헬멧, 유니폼) 직접 제작",
-
-                    "공식 홈페이지 구축 및 커뮤니티 운영"
-
-                ]}
-
-            />
 
             <ZeroOneCard 
 
@@ -1338,6 +1336,20 @@ const App = () => {
                     "고객 인터뷰 기반 문제 정의 및 솔루션 도출",
                     "기숙사 QR 마케팅을 통한 O2O 서비스 프로세스 구축"
                 ]}
+            />
+
+            <ZeroOneCard 
+
+                title="JB ORCA 야구단 창단"
+                role="FOUNDER"
+                desc="야구를 하고 싶다는 단순한 열정으로 시작해, 3명에서 27명의 조직으로 성장시켰습니다. 로고 디자인부터 유니폼 제작, 구단 운영 시스템 구축까지 모든 과정을 주도했습니다."
+                items={[
+                    "2023년 창단, 현재 27명 규모",
+                    "브랜딩 및 굿즈(헬멧, 유니폼) 직접 제작",
+                    "공식 홈페이지 구축 및 커뮤니티 운영"
+
+            ]}
+
             />
           </div>
 
