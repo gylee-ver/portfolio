@@ -623,7 +623,7 @@ const SIDE_PROJECTS = [
   {
     id: 'menturn',
     title: "AI 시니어 파트너스 플랫폼 - 멘턴",
-    url: "https://menturn.vercel.app",
+    url: "https://mentern.vercel.app",
     role: "팀 프로젝트 기획 & Front-End 개발",
     tech: ["React", "AI Integration", "Platform"],
     desc: "2025 AI 융합 아이디어톤 출품작입니다. 은퇴한 베이비붐 세대와 인력난을 겪는 제조업 현장을 연결하는 AI 매칭 플랫폼입니다. 시니어에게는 은퇴 후의 일자리를, 기업에게는 숙련된 단기 인력을 제공하여 사회적 문제를 해결하고자 했습니다. 프론트엔드 개발을 주도하며 시니어 사용자도 쉽게 이용할 수 있는 직관적인 UI/UX를 구현했습니다.",
