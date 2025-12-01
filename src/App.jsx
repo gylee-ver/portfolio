@@ -474,7 +474,7 @@ const PROJECTS = [
 
     ],
 
-    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop"
+    image: "/kakao.jpeg"
 
   },
 
@@ -504,7 +504,7 @@ const PROJECTS = [
 
     ],
 
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+    image: "/ideatorn.jpeg"
 
   },
 
@@ -534,7 +534,7 @@ const PROJECTS = [
 
     ],
 
-    image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=2070&auto=format&fit=crop"
+    image: "/athler.jpg"
 
   },
 
@@ -564,28 +564,53 @@ const PROJECTS = [
 
     ],
 
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=2070&auto=format&fit=crop"
+    image: "/yolda.png"
 
   }
 
 ];
 
 const HISTORY = [
+  { year: "2025", title: "파이오닉스랩 공동창업", desc: "Growth Marketing Lead\n스타트업의 0 to 1 성장을 위한 마케팅 전략 총괄 및 실행\n초기 클라이언트 비즈니스 모델 고도화 및 그로스 실험 설계", type: "career" },
+  { year: "2025", title: "Problem Solving Awards", desc: "카카오 임팩트 챌린지 & AI 융합 아이디어톤 대상\n현장 중심의 리서치로 문제를 정의하고 데이터 기반 솔루션 도출\n사회적 가치와 기술의 교차점에서 혁신적인 서비스 기획", type: "award" },
+  { year: "2024", title: "정리 플랫폼 '열다' 마케팅 매니저", desc: "Full Stack Marketing Lead\n신뢰 기반 'Trust Funnel' 설계로 활성 유저 전환율 개선\nSQL 코호트 분석 기반 이탈 원인 규명 및 CAC 40% 절감 달성", type: "career" },
+  { year: "2024", title: "3040 남성 패션 플랫폼 '애슬러' 그로스 마케터", desc: "Contents Marketing 인턴\n타겟 고객의 관심사를 '패션'에서 '골프 라이프스타일'로 재정의\n오가닉 콘텐츠 전략으로 마케팅 비용 없이 구매 전환 140명 견인", type: "career" },
+  { year: "2023", title: "스포츠 해설위원 & 저널리스트", desc: "K3리그 해설위원 & 점프볼 기자\n현장의 역동성을 언어로 번역하여 대중에게 전달하는 소통 역량\n데이터 분석 기반의 깊이 있는 경기 해설 및 기사 작성", type: "career" },
+  { year: "2023", title: "JB ORCA & ESG 최우수상", desc: "사회인 야구단 창단(Founder) & ESG 공모전 최우수상\n3명에서 27명으로, 무에서 유를 만드는 기획과 실행력 입증\n단순 아이디어를 구체적인 조직과 성과로 발전시키는 추진력", type: "milestone" },
+  { year: "2021", title: "Content & Media Experience", desc: "KBS미디어 도쿄올림픽 콘텐츠 제작 & KUSF 미디어 러너\n대규모 스포츠 이벤트의 실시간 콘텐츠 제작 및 송출 경험\n뉴미디어 트렌드에 맞춘 영상 기획 및 현장 취재 역량 확보", type: "career" },
+  { year: "2019", title: "한양대학교 ERICA 미디어학과 입학", desc: "커뮤니케이션&컬처대학 미디어학과 (3.21/4.5)\n미디어 생태계와 커뮤니케이션 이론에 대한 학문적 기반 마련\n다문화 멘토링, 국회 보좌진 과정 등 다양한 사회 참여 활동 병행", type: "education" }
+];
 
-  { year: "2025", title: "파이오닉스랩 공동창업", desc: "Growth Marketing Lead. 스타트업 클라이언트 성장 전략 수립.", type: "career" },
+// --- SIDE PROJECTS DATA ---
 
-  { year: "2025", title: "카카오 임팩트 챌린지 & AI 아이디어톤 대상", desc: "사회 문제 해결을 위한 기술/기획 역량 입증.", type: "award" },
-
-  { year: "2024", title: "플랫폼 '열다' & '애슬러'", desc: "Marketing Lead & Growth Marketer. 데이터 기반 성장 견인.", type: "career" },
-
-  { year: "2023", title: "JB ORCA 야구단 창단", desc: "Founder. 0에서 27명의 조직을 구축하고 브랜딩.", type: "milestone" },
-
-  { year: "2023", title: "스포츠 저널리즘 & 해설", desc: "네이버 스포츠 연재, K3리그 해설위원. 현장의 언어를 콘텐츠로.", type: "career" },
-
-  { year: "2019", title: "한양대학교 미디어학과", desc: "커뮤니케이션과 미디어 생태계에 대한 학문적 탐구.", type: "education" },
-
-  { year: "2018", title: "Start of the Journey", desc: "동아방송예술대학교 뉴미디어콘텐츠과 입학.", type: "education" }
-
+const SIDE_PROJECTS = [
+  {
+    id: 'toolfinder',
+    title: "툴파인더 (Toolfinder)",
+    url: "https://toolfinder.kr",
+    role: "1인 기획 & 개발 (Full Stack)",
+    tech: ["Supabase", "React", "Tailwind"],
+    desc: "세상에 너무 많은 툴들이 있습니다. '나에게 딱 맞는 SaaS를 찾아주는 서비스'를 목표로 개발했습니다. 사용자가 필요한 기능을 검색하면 최적의 SaaS 툴을 추천해주는 큐레이션 플랫폼입니다. Supabase를 활용하여 백엔드를 구축하고, 데이터베이스 설계부터 프론트엔드 구현까지 전 과정을 1인 개발로 진행했습니다.",
+    image: "/toolfinder.png"
+  },
+  {
+    id: 'someview',
+    title: "썸뷰 (Someview)",
+    url: "https://someview.kr",
+    role: "1인 기획 & 개발 (Front-End)",
+    tech: ["React", "Vite", "No-Backend"],
+    desc: "유튜버들을 위한 '썸네일 미리보기' 서비스입니다. 실제 유튜브 UI 환경에서 내 썸네일이 어떻게 보일지 미리 테스트해볼 수 있습니다. 저의 첫 번째 개발 프로덕트로, 복잡한 백엔드 없이 프론트엔드 로직만으로 사용자의 이미지를 브라우저 상에서 렌더링하고 합성하는 기능을 구현했습니다.",
+    image: "/someview.png"
+  },
+  {
+    id: 'pickteum',
+    title: "픽틈 (Pickteum)",
+    url: "https://pickteum.com",
+    role: "1인 기획 & 개발 (Full Stack)",
+    tech: ["Next.js", "Admin System", "Complex Logic"],
+    desc: "가벼운 아티클부터 심도 있는 콘텐츠까지, '사람들이 많이 볼 만한 사이트'를 모아놓은 이슈 큐레이션 플랫폼입니다. 추후 아티클 생성 자동화까지 개발이 가능합니다. 특히 개발 관점에서 다양한 카테고리와 태그 시스템을 관리하기 위해 복잡한 로직을 설계했습니다. 또한 효율적인 콘텐츠 업로드를 위해 별도의 관리자(Admin) 프로그램을 직접 개발하여 운영 효율성을 극대화한 것이 '신의 한 수'입니다.",
+    image: "/pickteum.png"
+  }
 ];
 
 // --- COMPONENTS ---
@@ -670,7 +695,7 @@ const App = () => {
 
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
 
-            {['Philosophy', 'History', 'Projects', 'ZeroToOne', 'Contact'].map((item) => (
+            {['Philosophy', 'History', 'Projects', 'ZeroToOne', 'SideProjects', 'Profile'].map((item) => (
 
               <button 
 
@@ -682,7 +707,7 @@ const App = () => {
 
               >
 
-                {item === 'ZeroToOne' ? 'Zero to One' : item}
+                {item === 'ZeroToOne' ? 'Zero to One' : item === 'SideProjects' ? 'Side Projects' : item}
 
               </button>
 
@@ -720,7 +745,7 @@ const App = () => {
 
             <div className="flex items-center gap-3 mb-6">
 
-              <span className="h-[1px] w-12 bg-[#d4ff00]"></span>
+              <span className="h-px w-12 bg-[#d4ff00]"></span>
 
               <h2 className="text-[#d4ff00] font-mono text-sm tracking-[0.2em] uppercase">
 
@@ -814,7 +839,7 @@ const App = () => {
 
                 진짜 문제는 <br/>
 
-                <span className="text-[#d4ff00] italic">책상 위</span>에<br/> 
+                <span className="text-[#d4ff00]">책상 위</span>에<br/> 
 
                 있지 않습니다.
 
@@ -847,55 +872,36 @@ const App = () => {
             
 
             <div className="grid grid-cols-2 gap-5">
-
               {[
-
-                { Icon: Target, title: "Definition", desc: "본질적 문제 정의" },
-
-                { Icon: TrendingUp, title: "Impact", desc: "수치로 증명하는 성장" },
-
-                { Icon: Users, title: "Field", desc: "현장 중심 리서치" },
-
-                { Icon: Award, title: "Hustle", desc: "끝까지 해내는 집요함" }
-
-              ].map(({ Icon, ...item }, idx) => (
-
+                { title: "Definition", desc: "본질적 문제 정의", img: "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?q=80&w=2070&auto=format&fit=crop" },
+                { title: "Impact", desc: "수치로 증명하는 성장", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" },
+                { title: "Field", desc: "현장 중심 리서치", img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" },
+                { title: "Hustle", desc: "끝까지 해내는 집요함", img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" }
+              ].map((item, idx) => (
                 <motion.div 
-
                   key={idx}
-
                   initial={{ opacity: 0, y: 20 }}
-
                   whileInView={{ opacity: 1, y: 0 }}
-
                   viewport={{ once: true }}
-
                   transition={{ delay: idx * 0.1 }}
-
                   whileHover={{ y: -5, borderColor: "rgba(212, 255, 0, 0.5)" }}
-
-                  className="bg-[#111] p-8 border border-white/5 transition-all rounded-xl flex flex-col justify-between h-48 group"
-
+                  className="relative overflow-hidden p-8 border border-white/5 transition-all rounded-xl flex flex-col justify-end h-48 group"
                 >
-
-                  <div className="text-[#d4ff00] mb-4 opacity-70 group-hover:opacity-100 transition-opacity">
-
-                    <Icon size={32} />
-
+                  {/* Background Image */}
+                  <div className="absolute inset-0 z-0">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
+                  
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/80 z-10 transition-opacity duration-300" />
 
-                  <div>
-
-                    <h4 className="font-bold text-xl mb-1">{item.title}</h4>
-
-                    <p className="text-sm text-gray-500">{item.desc}</p>
-
+                  {/* Content */}
+                  <div className="relative z-20">
+                    <h4 className="font-bold text-xl mb-1 text-white group-hover:text-[#d4ff00] transition-colors">{item.title}</h4>
+                    <p className="text-sm text-gray-400">{item.desc}</p>
                   </div>
-
                 </motion.div>
-
               ))}
-
             </div>
 
           </div>
@@ -903,6 +909,7 @@ const App = () => {
         </div>
 
       </section>
+
 
       {/* History (Timeline) Section */}
 
@@ -975,9 +982,7 @@ const App = () => {
                         {item.title}
 
                       </h4>
-
-                      <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-
+                      <p className="text-gray-500 text-sm leading-relaxed whitespace-pre-line">{item.desc}</p>
                    </div>
 
                 </div>
@@ -986,6 +991,18 @@ const App = () => {
 
             ))}
 
+          </div>
+
+          <div className="mt-20 text-center">
+            <a 
+              href="https://stone-rainstorm-286.notion.site/2bb48ea50aa4804587f0fa34adb33a86"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#111] border border-white/20 rounded-full text-white font-bold hover:border-[#d4ff00] hover:text-[#d4ff00] transition-all duration-300 group"
+            >
+              <span>View Full Resume</span>
+              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
 
         </div>
@@ -1030,7 +1047,7 @@ const App = () => {
 
               >
 
-                <div className="aspect-[16/9] overflow-hidden relative">
+                <div className="aspect-video overflow-hidden relative">
 
                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10" />
 
@@ -1140,7 +1157,7 @@ const App = () => {
 
                  />
 
-                 <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent"></div>
+                 <div className="absolute inset-0 bg-linear-to-t from-[#111] via-transparent to-transparent"></div>
 
                  <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full">
 
@@ -1294,7 +1311,7 @@ const App = () => {
 
                     "Growth Marketing Lead",
 
-                    "스타트업 클라이언트 대상 마케팅 솔루션 제공",
+                    "클라이언트 대상 마케팅 솔루션 제공",
 
                     "초기 비즈니스 모델 구축 참여"
 
@@ -1302,80 +1319,215 @@ const App = () => {
 
             />
 
+            <ZeroOneCard 
+                title="SID-DEEPTECH 창업 오디션"
+                role="FINALIST"
+                desc="채용난 시대에서 진정한 '갓생'은 내 마음의 본질을 닦는 것에서 시작된다는 믿음으로, 대학생을 위한 3분 마음관리 플랫폼 '마인드미닛'을 기획했습니다. 서류부터 본선까지 통과하며 아이디어의 실현 가능성을 인정받았습니다."
+                items={[
+                    "한양대학교 창업센터 주관 창업 오디션 결선 진출",
+                    "3분 마음관리 플랫폼 '마인드미닛' 기획",
+                    "문제 정의부터 솔루션 도출까지 전 과정 리드"
+                ]}
+            />
+            <ZeroOneCard 
+                title="한양대학교 창업동아리 AON"
+                role="TEAM LEADER"
+                desc="외국인 유학생들이 겪는 '느린 배송'과 '복잡한 구매 절차' 문제를 해결하기 위해 구매대행 서비스를 MVP로 운영했습니다. 인터뷰를 통해 Pain Point를 발굴하고, 기숙사 엘리베이터 QR코드를 활용한 O2O 전략으로 실질적인 주문을 이끌어냈습니다."
+                items={[
+                    "유학생 대상 빠른 배송 구매대행 서비스 MVP 운영",
+                    "고객 인터뷰 기반 문제 정의 및 솔루션 도출",
+                    "기숙사 QR 마케팅을 통한 O2O 서비스 프로세스 구축"
+                ]}
+            />
           </div>
 
         </div>
 
       </section>
 
-      {/* Contact Section */}
+      {/* Side Projects Section */}
+      <section id="sideprojects" className="py-32 px-6 bg-[#0a0a0a] border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+             <h2 className="text-4xl md:text-6xl font-bold mb-4">SIDE PROJECTS<span className="text-[#d4ff00]">.</span></h2>
+             <p className="text-gray-400 text-lg">스스로 문제를 정의하고 해결한 바이브 코딩 기반의 1인 개발 프로젝트입니다.</p>
+          </div>
 
-      <section id="contact" className="py-32 px-6 bg-[#0a0a0a]">
-
-        <div className="max-w-7xl mx-auto text-center">
-
-            <motion.div
-
+          <div className="grid lg:grid-cols-3 gap-8">
+            {SIDE_PROJECTS.map((project, idx) => (
+              <motion.div
+                key={project.id}
                 initial={{ opacity: 0, y: 20 }}
-
                 whileInView={{ opacity: 1, y: 0 }}
-
                 viewport={{ once: true }}
-
-            >
-
-                <h2 className="text-5xl md:text-8xl font-bold mb-8 tracking-tight">
-
-                    READY TO <span className="text-[#d4ff00]">SPRINT?</span>
-
-                </h2>
-
-                <p className="text-xl text-gray-400 mb-16 max-w-2xl mx-auto font-light">
-
-                    혁신을 꿈꾸는 조직에 가장 필요한 연료가 되겠습니다.<br/>
-
-                    커피챗은 언제나 환영입니다.
-
-                </p>
-
-                
-
-                <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mb-24">
-
-                    <ContactLink href="mailto:gy0408@naver.com" Icon={Mail} text="gy0408@naver.com" />
-
-                    <ContactLink href="tel:010-4920-8727" Icon={Phone} text="010-4920-8727" />
-
-                    <ContactLink href="https://linkedin.com/in/102536gy" Icon={ExternalLink} text="LinkedIn Profile" />
-
+                transition={{ delay: idx * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="group bg-[#111] rounded-2xl overflow-hidden border border-white/5 hover:border-[#d4ff00]/50 transition-all duration-300 flex flex-col h-full"
+              >
+                {/* Thumbnail */}
+                <div className="aspect-video w-full overflow-hidden relative border-b border-white/5">
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10" />
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="absolute top-4 right-4 z-20 p-2 bg-black/50 backdrop-blur-md rounded-full hover:bg-[#d4ff00] hover:text-black transition-all border border-white/10"
+                  >
+                    <ExternalLink size={16} />
+                  </a>
                 </div>
 
-                
-
-                <div className="flex justify-between items-end border-t border-white/10 pt-8 text-sm text-gray-600">
-
-                    <div>
-
-                        <p>© 2025 Lee Geon Yong.</p>
-
-                        <p>All Hustle Reserved.</p>
-
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <div className="text-[#d4ff00] text-xs font-mono mb-2 tracking-wide">{project.role}</div>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#d4ff00] transition-colors">
+                      {project.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tech.map((tech) => (
+                        <span key={tech} className="text-[10px] px-2 py-1 bg-white/5 rounded text-gray-400 border border-white/5">
+                          {tech}
+                        </span>
+                      ))}
                     </div>
+                  </div>
+                  
+                  <p className="text-gray-400 text-sm leading-relaxed flex-grow">
+                    {project.desc}
+                  </p>
 
-                    <div className="text-right font-mono text-xs">
-
-                        DESIGNED & DEVELOPED<br/>
-
-                        WITH PURE PASSION
-
-                    </div>
-
+                  <a 
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="mt-6 flex items-center gap-2 text-sm font-medium text-white group-hover:text-[#d4ff00] transition-colors pt-4 border-t border-white/5"
+                  >
+                    Visit Service <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
-
-            </motion.div>
-
+              </motion.div>
+            ))}
+          </div>
         </div>
+      </section>
 
+      {/* Profile & Contact Section */}
+      <section id="profile" className="py-32 px-6 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          {/* Intro Header */}
+          <div className="text-center mb-20">
+              <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+              >
+                  <h2 className="text-5xl md:text-8xl font-bold mb-8 tracking-tight">
+                      READY TO <span className="text-[#d4ff00]">SPRINT?</span>
+                  </h2>
+                  <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto font-light">
+                      혁신을 꿈꾸는 조직에 가장 필요한 연료가 되겠습니다.<br/>
+                      커피챗 너무 좋아합니다.<br/>
+                      감사합니다.
+                  </p>
+              </motion.div>
+          </div>
+
+          {/* Profile Card */}
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-[#111] rounded-2xl p-8 md:p-12 border border-white/10 shadow-2xl"
+            >
+              <div className="flex flex-col md:flex-row items-start gap-10">
+                <div className="w-full md:w-1/3 shrink-0">
+                  <div className="aspect-[3/4] w-full bg-gray-800 rounded-xl overflow-hidden border border-white/10 relative group">
+                    <div className="absolute inset-0 bg-[#d4ff00]/10 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+                    <img 
+                      src="/profilepic.png" 
+                      alt="Lee Geon Yong" 
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                </div>
+                
+                <div className="flex-1 w-full">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+      <div>
+                        <h2 className="text-3xl md:text-2xl font-bold mb-2">이건용 | LEE GEON YONG</h2>
+                        <p className="text-gray-400 font-mono">Growth Marketer & Strategist</p>
+                     </div>
+                     <div className="flex gap-3">
+                        <a href="mailto:gy0408@naver.com" className="p-3 bg-white/5 rounded-full hover:bg-[#d4ff00] hover:text-black transition-all border border-white/10 group" title="Email">
+                          <Mail size={20} />
+                        </a>
+                        <a href="tel:010-4920-8727" className="p-3 bg-white/5 rounded-full hover:bg-[#d4ff00] hover:text-black transition-all border border-white/10 group" title="Phone">
+                          <Phone size={20} />
+                        </a>
+                        <a href="https://linkedin.com/in/102536gy" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-[#d4ff00] hover:text-black transition-all border border-white/10 group" title="LinkedIn">
+                          <ExternalLink size={20} />
+        </a>
+      </div>
+                  </div>
+
+                  <div className="grid gap-6 text-gray-400">
+                    <div className="flex items-start gap-4">
+                      <div className="w-6 shrink-0 pt-1 text-[#d4ff00]">
+                         <Users size={20} />
+                      </div>
+                      <div>
+                         <span className="block text-white font-bold mb-1">Personal Info</span>
+                         1999.04.08 (만 26세) / 남성
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-4">
+                      <div className="w-6 shrink-0 pt-1 text-[#d4ff00]">
+                         <MapPin size={20} />
+                      </div>
+                      <div>
+                         <span className="block text-white font-bold mb-1">Address</span>
+                         서울특별시 범안로 1212 e편한세상독산더타워 103동 3111호
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-6 shrink-0 pt-1 text-[#d4ff00]">
+                         <Award size={20} />
+                      </div>
+                      <div>
+                         <span className="block text-white font-bold mb-1">Connect</span>
+                         <div className="flex flex-col gap-1">
+                           <a href="https://instagram.com/2geonyong" target="_blank" rel="noreferrer" className="hover:text-[#d4ff00] transition-colors">Instagram @2geonyong</a>
+                           <a href="https://instagram.com/udontknow.golf" target="_blank" rel="noreferrer" className="hover:text-[#d4ff00] transition-colors">Instagram @udontknow.golf</a>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Footer Info */}
+          <div className="flex justify-between items-end border-t border-white/10 pt-8 mt-24 text-sm text-gray-600">
+              <div>
+                  <p>© 2025 Lee Geon Yong.</p>
+                  <p>All Hustle Reserved.</p>
+              </div>
+              <div className="text-right font-mono text-xs">
+                  DESIGNED & DEVELOPED<br/>
+                  WITH PURE PASSION
+              </div>
+          </div>
+        </div>
       </section>
 
     </div>
@@ -1420,7 +1572,7 @@ const ZeroOneCard = ({ title, role, desc, items }) => (
 
         </ul>
 
-    </div>
+      </div>
 
 );
 
